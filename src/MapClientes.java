@@ -7,7 +7,14 @@ public class MapClientes {
         clientes.put(1, "Génesys");
         clientes.put(2, "Marcos");
         clientes.put(3, "Maria");
-        System.out.println("El nombre del cliente con ID 2 es: "+clientes.get(2));
+
+        int clienteID = 2;
+        if (clientes.containsKey(clienteID)) {
+            String nombreCliente = clientes.get(clienteID);
+            System.out.println("El nombre del cliente con ID " +clienteID+ " es: "+nombreCliente);
+        } else {
+            System.out.println("El nombre del cliente con ID" +clienteID+ " no encontrado.");
+        }
 
         for (Integer i : clientes.keySet()) {
             System.out.println(i);
