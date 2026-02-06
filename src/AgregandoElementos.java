@@ -8,6 +8,6 @@ public class AgregandoElementos {
         empleados.add("María");
         empleados.add("Carlos");
         empleados.add("Ana");
-        System.out.println("Lista de emnpleados: "+empleados);
+        System.out.println("Lista de empleados: "+empleados);
     }
 }
